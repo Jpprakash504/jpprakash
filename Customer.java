@@ -13,6 +13,11 @@ public class Customer {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
 	private String name;
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", name=" + name + ", accountno=" + accountno + ", ifsc=" + ifsc + ", branch="
+				+ branch + "]";
+	}
 	private int accountno;
 	private String ifsc;
 	private String branch;
